@@ -1,7 +1,65 @@
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
+
+/* Global */
+
 body {
   background: rgb(190, 223, 197);
 }
+
+/* Navigation bar */
+
+#logo {
+  width: 53px;
+  height: 59px;
+}
+.nav {
+  overflow: hidden;
+  width: 100%;
+  height: 59px;
+}
+
+.right-menu {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin-top: 10px;
+}
+
+.right-menu a {
+  border-radius: 9999px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0px 14px;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.right-menu a:hover {
+  background-color: white;
+  color: rgb(190, 223, 197);
+}
+
+
+/* Introduce */
+
+.introduce {
+  margin-top: calc(2% + 5px);
+  width: 100%;
+  height: 80%;
+}
+
+.introduce img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Animation */
 
 .snowflake {
   color: #fff;
@@ -121,4 +179,39 @@ body {
   left: 90%;
   -webkit-animation-delay: 3s, 1.5s;
   animation-delay: 3s, 1.5s;
+}
+
+/* Footer */
+footer img {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+/* Widget */
+
+.widget {
+  float: right;
+  border-radius: 20px;
+  background: #6699cc;
+  margin-top: calc(2% + 5px);
+  width: 20%;
+  height: 30%;
+}
+
+.widget h1 {
+  color: #5de1e6;
+  font-weight: bold;
+  font-size: 27px;
+  margin-left: 25px;
+  padding: 10px 0;
+}
+
+.widget iframe {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
 }
