@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0px;
     font-family: 'Arial', sans-serif;
@@ -11,39 +12,47 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 .pomodoro-container {
     display: flex;
     flex-flow: row wrap;
-    border: 1px ;
+    border: 1px;
     border-radius: 1rem;
     padding: 20px;
     width: 225px;
 }
+
 .pomodoro-item {
     width: 100%;
 }
+
 .label {
     font-size: 20px;
     text-transform: uppercase;
     color: rgb(255, 245, 235);
 }
+
 .row-pomodoro {
     margin: 8px 0 16px 0;
     text-align: center;
 }
+
 .playerButton {
     border-top: solid 3px rgb(255, 245, 235);
     padding-top: 12px;
 }
+
 .buttonRow {
     display: flex;
     justify-content: space-around;
 }
+
 .lengthTime {
     display: inline-block;
     padding: 0 20px 0 20px;
     font-size: 35px;
 }
+
 .btn-updown {
     font-size: 1.5rem;
     width: 30px;
@@ -54,6 +63,7 @@ body {
     background: transparent;
     box-shadow: 0px 0px 10px 10px #a1d8ae;
 }
+
 .btn-controller {
     border: none;
     cursor: pointer;
@@ -61,6 +71,7 @@ body {
     background-color: transparent;
     color: #fff;
 }
+
 /* Pomodoro item row */
 #timeLeft {
     font-size: 3rem;

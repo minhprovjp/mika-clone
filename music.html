@@ -1,223 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music player</title>
-  <link rel="stylesheet" href="assets\css\music.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="assets\css\music.css">
 </head>
+
 <body>
-  <div class="player">
+    <div class="player">
 
-    <div class="player__header">
+        <div class="player__header">
 
-      <div class="player__img player__img--absolute slider">
+            <div class="player__img player__img--absolute slider">
 
-        <button class="player__button player__button--absolute--nw playlist">
+                <button class="player__button player__button--absolute--nw playlist">
 
-          <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+                    <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
 
-        </button>
+                </button>
 
-        <button class="player__button player__button--absolute--center play">
+                <button class="player__button player__button--absolute--center play">
 
-          <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
-          <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+                    <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+                    <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
 
-        </button>
+                </button>
 
-        <div class="slider__content">
+                <div class="slider__content">
 
-          <img class="img slider__img" src="assets\img\Howl's Moving Castle.jpg" alt="cover">
-          <img class="img slider__img" src="assets\img\All with you Taeyeon.jpeg" alt="cover">
-          <img class="img slider__img" src="assets\img\Say yes - Loco & Punch.jpeg" alt="cover">
-          <img class="img slider__img" src="assets\img\We don't talk together - Heize.jpeg" alt="cover">
-          <img class="img slider__img" src="assets\img\Sign of the Times - Harry Styles.jpeg" alt="cover">
-          <img class="img slider__img" src="assets\img\Falling - Harry Styles.jpeg" alt="cover">
-          <img class="img slider__img" src="assets\img\Magic Shop - BTS.jpeg" alt="cover">
+                    <img class="img slider__img" src="assets\img\Howl's Moving Castle.jpg" alt="cover">
+                    <img class="img slider__img" src="assets\img\All with you Taeyeon.jpeg" alt="cover">
+                    <img class="img slider__img" src="assets\img\Say yes - Loco & Punch.jpeg" alt="cover">
+                    <img class="img slider__img" src="assets\img\We don't talk together - Heize.jpeg" alt="cover">
+                    <img class="img slider__img" src="assets\img\Sign of the Times - Harry Styles.jpeg" alt="cover">
+                    <img class="img slider__img" src="assets\img\Falling - Harry Styles.jpeg" alt="cover">
+                    <img class="img slider__img" src="assets\img\Magic Shop - BTS.jpeg" alt="cover">
+
+                </div>
+
+            </div>
+
+            <div class="player__controls">
+
+                <button class="player__button back">
+
+                    <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+
+                </button>
+
+                <p class="player__context slider__context">
+
+                    <strong class="slider__name"></strong>
+                    <span class="player__title slider__title"></span>
+
+                </p>
+
+                <button class="player__button next">
+
+                    <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+
+                </button>
+
+                <div class="progres">
+
+                    <div class="progres__filled"></div>
+
+                </div>
+
+            </div>
 
         </div>
 
-      </div>
+        <ul class="player__playlist list">
 
-      <div class="player__controls">
+            <li class="player__song">
 
-        <button class="player__button back">
+                <img class="player__img img" src="assets\img\Howl's Moving Castle.jpg" alt="cover">
 
-          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+                <p class="player__context">
 
-        </button>
-        
-        <p class="player__context slider__context">
+                    <b class="player__song-name">Howl's Moving Castle OST</b>
+                    <span class="flex">
 
-          <strong class="slider__name"></strong>
-          <span class="player__title slider__title"></span>
+                        <span class="player__title">Howl's Moving Castle OST</span>
+                        <span class="player__song-time"></span>
 
-        </p>
+                    </span>
 
-        <button class="player__button next">
+                </p>
 
-          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+                <audio class="audio" src="assets\audio\y2meta.com - Howl's Moving Castle [OST - Theme Song] (128 kbps).mp3"></audio>
 
-        </button>
+            </li>
 
-        <div class="progres">
+            <li class="player__song">
 
-          <div class="progres__filled"></div>
+                <img class="player__img img" src="assets\img\All with you Taeyeon.jpeg" alt="cover">
 
-        </div>
+                <p class="player__context">
 
-      </div>
+                    <b class="player__song-name">All with you</b>
+                    <span class="flex">
+
+                        <span class="player__title">Taeyeon</span>
+                        <span class="player__song-time"></span>
+
+                    </span>
+
+                </p>
+
+                <audio class="audio" src="assets\audio\y2meta.com - [달의 연인 - 보보경심 려 OST Part 5] 태연 (TAEYEON) - All With You MV (128 kbps).mp3"></audio>
+
+            </li>
+
+            <li class="player__song">
+
+                <img class="player__img img" src="assets\img\Say yes - Loco & Punch.jpeg" alt="cover">
+
+                <p class="player__context">
+
+                    <b class="player__song-name">Say yes</b>
+                    <span class="flex">
+
+                        <span class="player__title">Loco & Punch</span>
+                        <span class="player__song-time"></span>
+
+                    </span>
+
+                </p>
+
+                <audio class="audio" src="assets\audio\y2meta.com - [달의 연인 - 보보경심 려 OST Part 2] 로꼬, 펀치 (Loco, Punch) - Say Yes MV (128 kbps).mp3"></audio>
+
+            </li>
+
+            <li class="player__song">
+
+                <img class="player__img img" src="assets\img\We don't talk together - Heize.jpeg" alt="cover">
+
+                <p class="player__context">
+
+                    <b class="player__song-name">We don't talk together</b>
+                    <span class="flex">
+
+                        <span class="player__title">Heize ft Giriboy (Pro.Suga)</span>
+                        <span class="player__song-time"></span>
+
+                    </span>
+
+                </p>
+
+                <audio class="audio" src="assets\audio\y2meta.com - 헤이즈 (Heize) - We don't talk together (Feat. 기리보이 (Giriboy)) (Prod. SUGA) MV (128 kbps).mp3"></audio>
+
+            </li>
+
+            <li class="player__song">
+
+                <img class="player__img img" src="assets\img\Sign of the Times - Harry Styles.jpeg" alt="cover">
+
+                <p class="player__context ">
+
+                    <b class="player__song-name">Sign of the Times</b>
+                    <span class="flex">
+
+                        <span class="player__title">Harry Styles</span>
+                        <span class="player__song-time"></span>
+
+                    </span>
+
+                </p>
+
+                <audio class="audio" src="assets\audio\y2meta.com - Harry Styles - Sign of the Times (Official Video) (128 kbps).mp3"></audio>
+
+            </li>
+
+            <li class="player__song">
+
+                <img class="player__img img" src="assets\img\Falling - Harry Styles.jpeg" alt="cover">
+
+                <p class="player__context">
+
+                    <b class="player__song-name">Falling</b>
+                    <span class="flex">
+
+                        <span class="player__title">Harry Styles</span>
+                        <span class="player__song-time"></span>
+
+                    </span>
+
+                </p>
+
+                <audio class="audio" src="assets\audio\y2meta.com - Harry Styles - Falling (Official Video) (128 kbps).mp3"></audio>
+
+            </li>
+
+            <li class="player__song">
+
+                <img class="player__img img" src="assets\img\Magic Shop - BTS.jpeg" alt="cover">
+
+                <p class="player__context ">
+
+                    <b class="player__song-name">Magic Shop <span class="uppercase"></span></b>
+                    <span class="flex">
+
+                        <span class="player__title">BTS</span>
+                        <span class="player__song-time"></span>
+
+                    </span>
+
+                </p>
+
+                <audio class="audio" src="assets\audio\y2meta.com - Magic Shop (128 kbps).mp3"></audio>
+
+            </li>
+
+        </ul>
 
     </div>
-
-    <ul class="player__playlist list">
-
-      <li class="player__song">
-
-        <img class="player__img img" src="assets\img\Howl's Moving Castle.jpg" alt="cover">
-
-        <p class="player__context">
-
-          <b class="player__song-name">Howl's Moving Castle OST</b>
-          <span class="flex">
-
-            <span class="player__title">Howl's Moving Castle OST</span>
-            <span class="player__song-time"></span>
-
-          </span>
-
-        </p>
-
-        <audio class="audio" src="assets\audio\y2meta.com - Howl's Moving Castle [OST - Theme Song] (128 kbps).mp3"></audio>
-
-      </li>
-
-      <li class="player__song">
-
-        <img class="player__img img" src="assets\img\All with you Taeyeon.jpeg" alt="cover">
-
-        <p class="player__context">
-
-          <b class="player__song-name">All with you</b>
-          <span class="flex">
-
-            <span class="player__title">Taeyeon</span>
-            <span class="player__song-time"></span>
-
-          </span>
-          
-        </p>
-
-        <audio class="audio" src="assets\audio\y2meta.com - [달의 연인 - 보보경심 려 OST Part 5] 태연 (TAEYEON) - All With You MV (128 kbps).mp3"></audio>
-
-      </li>
-
-      <li class="player__song">
-
-        <img class="player__img img" src="assets\img\Say yes - Loco & Punch.jpeg" alt="cover">
-
-        <p class="player__context">
-
-          <b class="player__song-name">Say yes</b>
-          <span class="flex">
-
-            <span class="player__title">Loco & Punch</span>
-            <span class="player__song-time"></span>
-
-          </span>
-            
-        </p>
-
-        <audio class="audio" src="assets\audio\y2meta.com - [달의 연인 - 보보경심 려 OST Part 2] 로꼬, 펀치 (Loco, Punch) - Say Yes MV (128 kbps).mp3"></audio>
-
-      </li>
-
-      <li class="player__song">
-
-        <img class="player__img img" src="assets\img\We don't talk together - Heize.jpeg" alt="cover">
-
-        <p class="player__context">
-
-          <b class="player__song-name">We don't talk together</b>
-          <span class="flex">
-
-            <span class="player__title">Heize ft Giriboy (Pro.Suga)</span>
-            <span class="player__song-time"></span>
-
-          </span>
-          
-        </p>
-
-        <audio class="audio" src="assets\audio\y2meta.com - 헤이즈 (Heize) - We don't talk together (Feat. 기리보이 (Giriboy)) (Prod. SUGA) MV (128 kbps).mp3"></audio>
-
-      </li>
-
-      <li class="player__song">
-
-        <img class="player__img img" src="assets\img\Sign of the Times - Harry Styles.jpeg" alt="cover">
-
-        <p class="player__context ">
-
-          <b class="player__song-name">Sign of the Times</b>
-          <span class="flex">
-
-            <span class="player__title">Harry Styles</span>
-            <span class="player__song-time"></span>
-
-          </span>
-
-        </p>
-
-        <audio class="audio" src="assets\audio\y2meta.com - Harry Styles - Sign of the Times (Official Video) (128 kbps).mp3"></audio>
-
-      </li>
-
-      <li class="player__song">
-
-        <img class="player__img img" src="assets\img\Falling - Harry Styles.jpeg" alt="cover">
-
-        <p class="player__context">
-
-          <b class="player__song-name">Falling</b>
-          <span class="flex">
-
-            <span class="player__title">Harry Styles</span>
-            <span class="player__song-time"></span>
-
-          </span>
-
-        </p>
-
-        <audio class="audio" src="assets\audio\y2meta.com - Harry Styles - Falling (Official Video) (128 kbps).mp3"></audio>
-
-      </li>
-
-      <li class="player__song">
-
-        <img class="player__img img" src="assets\img\Magic Shop - BTS.jpeg" alt="cover">
-
-        <p class="player__context ">
-
-          <b class="player__song-name">Magic Shop <span class="uppercase"></span></b>
-          <span class="flex">
-
-            <span class="player__title">BTS</span>
-            <span class="player__song-time"></span>
-
-          </span>
-
-        </p>
-
-        <audio class="audio" src="assets\audio\y2meta.com - Magic Shop (128 kbps).mp3"></audio>
-
-      </li>
-
-    </ul>
-
-  </div>
 </body>
 
 <script src="assets\scripts\music.js"></script>
+
 </html>

@@ -299,6 +299,7 @@ footer img {
     margin-top: -50px;
     margin-left: 150px;
 }
+
 .grid-item6 {
     background-color: rgb(190, 223, 197);
     font-size: 30px;
@@ -376,7 +377,7 @@ footer img {
     height: 300px;
     margin-left: 25px;
     margin-top: -300px;
-    
+
 }
 
 .grid-item14 {
@@ -439,11 +440,11 @@ footer img {
     height: 100%;
 }
 
-.ins{
+.ins {
     padding-top: 20px;
 }
 
-.lich{
+.lich {
     height: 1000px;
     width: 100%;
 }
@@ -480,20 +481,20 @@ a {
     border-radius: 29px;
 }
 
-.music{
+.music {
     height: 100%;
     width: 100%;
     border-radius: 29px;
     margin-top: 25px;
 }
 
-.garden{
+.garden {
     border-radius: 29px;
     width: 400px;
     height: 100%;
 }
 
-.cat{
+.cat {
     border-radius: 29px;
     height: 100%;
 }
@@ -502,23 +503,23 @@ a {
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: none;
     border-radius: 20px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #74c083;
-    border-radius: 20px; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #5eaf6e; 
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5eaf6e;
 }
 
 .scroll {

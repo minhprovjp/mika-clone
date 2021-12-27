@@ -16,8 +16,8 @@ const arrayTime = timeLeftDOM.innerText.split(":");
 let timeLeft = parseInt(arrayTime[0] * 60) + parseInt(arrayTime[1]); // timeLeft en secondes
 let playIsClicked = true;
 let isSession = false;
-let breakLength = 5*60;
-let timeLength = 25*60;
+let breakLength = 5 * 60;
+let timeLength = 25 * 60;
 
 function convertSeconds(seconds) {
     return {
@@ -32,9 +32,9 @@ let interval;
 buttonPlay.addEventListener('click', () => {
 
     // Chrono start (play)
-    if(playIsClicked) {
+    if (playIsClicked) {
 
-        if(interval) {
+        if (interval) {
             clearInterval(interval)
         }
         interval = setInterval(handleTime, 1000);
@@ -45,14 +45,14 @@ buttonPlay.addEventListener('click', () => {
 
         function handleTime() {
             // Chrono finit
-            if(timeLeft <= 0) {
+            if (timeLeft <= 0) {
 
                 // Session
-                if(isSession) {
+                if (isSession) {
                     labelSessionBreak.innerText = "Session";
                     timeLeft = timeLength;
-                } 
-                
+                }
+
                 // Break
                 else {
                     labelSessionBreak.innerText = "Break";
@@ -61,10 +61,10 @@ buttonPlay.addEventListener('click', () => {
                     document.getElementById('beep').play();
                 }
                 isSession = !isSession;
-            } 
-            
+            }
+
             // Arrêt du chrono
-            else if(playIsClicked) {
+            else if (playIsClicked) {
                 clearInterval(interval);
             }
 
@@ -75,8 +75,8 @@ buttonPlay.addEventListener('click', () => {
                 timeLeftDOM.innerText = `${('0'+minutesAndSeconds.minutes).slice(-2)}:${('0'+minutesAndSeconds.seconds).slice(-2)}`;
             }
         }
-    } 
-    
+    }
+
     // Chrono mis en pause
     else {
         // Affichage icône play
@@ -84,17 +84,17 @@ buttonPlay.addEventListener('click', () => {
         playIcon.classList.remove('fa-pause');
     }
     playIsClicked = !playIsClicked;
-}); 
+});
 
 /* Handle reset button */
 buttonReset.addEventListener('click', () => {
-    breakLength = 5*60;
-    timeLength = 25*60;
+    breakLength = 5 * 60;
+    timeLength = 25 * 60;
     timeLeft = timeLength;
     breakLengthDOM.innerText = "5";
     sessionLengthDOM.innerText = "25";
     timeLeftDOM.innerText = "25:00";
-    if(!playIsClicked) {
+    if (!playIsClicked) {
         buttonPlay.click();
     }
 });
@@ -102,31 +102,31 @@ buttonReset.addEventListener('click', () => {
 /* Handle length button */
 function handleLengthButton(lengthValue, htmlElement, isAddition, isBreakLength) {
     let result = 1;
-    if(isAddition) {
+    if (isAddition) {
         result = ++lengthValue;
         htmlElement.innerText = result;
     } else {
-        if(lengthValue != 1) {
+        if (lengthValue != 1) {
             result = --lengthValue;
             htmlElement.innerText = result;
         }
     }
-    if(!playIsClicked) {
+    if (!playIsClicked) {
         buttonPlay.click();
     }
     let resultSeconds = result * 60;
-    if(!isBreakLength) {
+    if (!isBreakLength) {
         timeLength = resultSeconds;
 
-        if(labelSessionBreak.innerText === 'SESSION') {
-            timeLeftDOM.innerText = ('0'+result).slice(-2) + ":00";
+        if (labelSessionBreak.innerText === 'SESSION') {
+            timeLeftDOM.innerText = ('0' + result).slice(-2) + ":00";
             timeLeft = resultSeconds;
         }
     } else {
         breakLength = resultSeconds;
 
-        if(labelSessionBreak.innerText === 'BREAK') {
-            timeLeftDOM.innerText = ('0'+result).slice(-2) + ":00";
+        if (labelSessionBreak.innerText === 'BREAK') {
+            timeLeftDOM.innerText = ('0' + result).slice(-2) + ":00";
             timeLeft = resultSeconds;
         }
     }
