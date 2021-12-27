@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
+
 
 /* Global */
 
@@ -235,115 +235,125 @@ footer img {
 
 /*css grid*/
 .grid-container {
-    font-family: 'Corinthia', cursive;
+    font-family: 'Raleway', sans-serif;
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: 500px 650px 400px;
+    grid-gap: 75px 100px;
+    padding: 50px 50px 50px 0px;
+    background-color: rgb(255, 245, 235);
+    color: rgb(255, 245, 235);
 }
 
 .grid-item1 {
     background-color: rgb(190, 223, 197);
-    font-size: 75px;
+    font-size: 60px;
     text-align: center;
     border-radius: 9999px;
-    height: 125px;
-    width: 500px;
-    margin: 50px;
+    width: 400px;
+    margin: 50px 150px;
+    padding-top: 25px;
+    height: 100px;
+    color: rgb(255, 245, 235);
 }
 
 .grid-item2 {
     background-color: rgb(190, 223, 197);
-    font-size: 140px;
-    margin: 50px;
+    font-size: 60px;
+    padding-top: 25px;
+    height: 100px;
+    margin: 50px 150px;
     text-align: center;
     border-radius: 9999px;
-    width: 650px;
+    width: 400px;
+    margin-left: 200px;
 }
 
 .grid-item3 {
     background-color: rgb(190, 223, 197);
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     border-radius: 9999px;
-    height: 100px;
     padding-top: 25px;
-    margin: 50px;
+    height: 100px;
+    margin-left: 75px;
+    margin-top: 50px;
     width: 400px;
 }
 
 .grid-item4 {
-    margin-left: 150px;
+    margin-left: 200px;
     font-size: 50px;
     text-align: center;
     height: 300px;
     width: 300px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -50px;
 }
 
 .grid-item5 {
     font-size: 30px;
     text-align: center;
-    margin: 50px;
-    height: 100px;
-    width: 650px;
-    margin-top: 60px;
+    height: 300px;
+    width: 533px;
+    margin-top: -50px;
+    margin-left: 150px;
 }
-
 .grid-item6 {
     background-color: rgb(190, 223, 197);
     font-size: 30px;
-    border-radius: 9999px;
-    margin-top: -10px;
-    margin-left: 130px;
-    display: flex;
-    width: 155px;
-    height: 100px;
+    border-radius: 29px;
+    margin-top: -50px;
+    margin-left: 150px;
+    width: 200px;
+    height: 145px;
     align-items: center;
+    padding: 30px;
+    display: grid;
 }
 
 .grid-item7 {
-    font-size: 30px;
     text-align: center;
-    border-radius: 9999px;
-    margin-top: 175px;
-    margin-left: 50px;
+    margin-left: 100px;
     width: 500px;
     height: 340px;
+    margin-top: 10px;
 }
 
 .grid-item8 {
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: -30px 50px;
+    margin-left: 90px;
     height: 500px;
     width: 650px;
+    margin-top: 10px;
 }
 
 .grid-item9 {
     font-size: 30px;
     text-align: center;
-    margin-top: -100px;
-    margin-left: 115px;
-    width: 300px;
+    margin-left: 150px;
+    width: 250px;
     height: 388px;
+    margin-top: -85px;
 }
 
 .grid-item10 {
     background-color: rgb(190, 223, 197);
-    font-size: 30px;
     text-align: center;
-    border-radius: 9999px;
-    margin: 50px;
+    margin-top: -190px;
+    width: 500px;
+    height: 400px;
+    margin-left: 100px;
 }
 
 .grid-item11 {
     font-size: 30px;
-    text-align: center;
-    border-radius: 9999px;
-    margin: 50px;
-    width: 650px;
+    margin-left: 160px;
+    margin-top: 10px;
+    height: 500px;
+    width: 500px;
 }
 
 .grid-item12 {
@@ -351,72 +361,63 @@ footer img {
     font-size: 30px;
     text-align: center;
     border-radius: 9999px;
-    margin: 50px;
+    margin-top: -200px;
+    margin-left: 75px;
+    width: 400px;
+    height: 500px;
 }
 
 .grid-item13 {
-    background-color: rgb(190, 223, 197);
     font-size: 30px;
     text-align: center;
     border-radius: 9999px;
     margin: 50px;
+    width: 501px;
+    height: 300px;
+    margin-left: 25px;
+    margin-top: -300px;
+    
 }
 
 .grid-item14 {
-    background-color: rgb(190, 223, 197);
     font-size: 30px;
     text-align: center;
-    border-radius: 9999px;
-    margin: 50px;
+    margin-left: 160px;
+    width: 500px;
+    height: 715px;
+    margin-top: 10px;
 }
 
 .grid-item15 {
-    background-color: rgb(190, 223, 197);
     font-size: 30px;
     text-align: center;
     border-radius: 9999px;
-    margin: 50px;
+    margin-left: 60px;
+    margin-top: 273px;
+    width: 450px;
+    height: 450px;
 }
 
 .grid-item16 {
-    background-color: rgb(190, 223, 197);
     font-size: 30px;
     text-align: center;
-    border-radius: 9999px;
-    margin: 50px;
-}
-
-.grid-item17 {
-    background-color: rgb(190, 223, 197);
-    font-size: 30px;
-    text-align: center;
-    border-radius: 9999px;
-    margin: 50px;
-}
-
-.grid-item18 {
-    background-color: rgb(190, 223, 197);
-    font-size: 30px;
-    text-align: center;
-    border-radius: 9999px;
-    margin: 50px;
+    margin-left: 150px;
+    margin-top: -725px;
+    height: 650px;
 }
 
 .content {
-    height: 2000px;
+    height: 3600px;
     background-color: rgb(255, 245, 235);
     font-size: 36px;
     margin: -8px;
 }
 
-.soundcloud {
-    border-radius: 9999px;
-}
-
-.rain {
-    border-radius: 29px;
+.video {
+    border-radius: 39px;
     width: 100%;
     height: 100%;
+    border: 39px;
 }
 
 .clock {
@@ -426,21 +427,104 @@ footer img {
     border-radius: 42px;
 }
 
-.avatar{
+.avatar {
     height: 100%;
     width: 100%;
     border-radius: 9999px;
 }
 
 .quotes {
-    width: 100%;
-    min-height: fit-content;
     border-radius: 25px;
+    width: 100%;
+    height: 100%;
 }
 
 .ins{
-    display: flex;
-    width: 50%;
-    height: 50%;
-    margin: 27px;
+    padding-top: 20px;
+}
+
+.lich{
+    height: 1000px;
+    width: 100%;
+}
+
+a {
+    color: rgb(255, 245, 235);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.todolist {
+    height: 100%;
+    width: 100%;
+    border-radius: 29px;
+}
+
+.images {
+    border-radius: 29px;
+    width: 100%;
+    height: 100%;
+}
+
+.ngaythi {
+    height: 100%;
+    width: 100%;
+    border-radius: 29px;
+    margin-left: 75px;
+}
+
+.pomodoro {
+    height: 100%;
+    width: 100%;
+    padding-top: 0px;
+    border-radius: 29px;
+}
+
+.music{
+    height: 100%;
+    width: 100%;
+    border-radius: 29px;
+    margin-top: 25px;
+}
+
+.garden{
+    border-radius: 29px;
+    width: 400px;
+    height: 100%;
+}
+
+.cat{
+    border-radius: 29px;
+    height: 100%;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 20px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #74c083;
+    border-radius: 20px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5eaf6e; 
+}
+
+.scroll {
+    width: 20px;
+    height: 200px;
+    overflow: auto;
+    float: left;
+    margin: 0 10px;
 }
