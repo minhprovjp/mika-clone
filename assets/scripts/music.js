@@ -1,3 +1,7 @@
+// Designed by:  Mauricio Bucardo
+// Original image: https://dribbble.com/shots/6957353-Music-Player-Widget
+
+
 "use strict";
 
 // add elemnts
@@ -35,7 +39,7 @@ function openPlayer() {
     playerHeader.classList.add("open-header");
     playerControls.classList.add("move");
     slider.classList.add("open-slider");
-
+    
 }
 
 function closePlayer() {
@@ -43,11 +47,11 @@ function closePlayer() {
     playerHeader.classList.remove("open-header");
     playerControls.classList.remove("move");
     slider.classList.remove("open-slider");
-
+    
 }
 
 function next(index) {
-
+    
     count = index || count;
 
     if (count == sliderContentLength) {
@@ -64,14 +68,14 @@ function next(index) {
 }
 
 function back(index) {
-
+    
     count = index || count;
 
     if (count == 0) {
         count = count;
         return;
     }
-
+    
     left = (count - 1) * sliderWidth;
     left = Math.max(0, left);
     sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
@@ -83,27 +87,31 @@ function back(index) {
 function changeSliderContext() {
 
     sliderContext.style.animationName = "opacity";
-
+    
     sliderName.textContent = playerPlayList[count].querySelector(".player__title").textContent;
     sliderTitle.textContent = playerPlayList[count].querySelector(".player__song-name").textContent;
-
+    
     if (sliderName.textContent.length > 16) {
         const textWrap = document.createElement("span");
         textWrap.className = "text-wrap";
-        textWrap.innerHTML = sliderName.textContent + "   " + sliderName.textContent;
+        textWrap.innerHTML = sliderName.textContent + "   " + sliderName.textContent;  
         sliderName.innerHTML = "";
         sliderName.append(textWrap);
-
+        
     }
 
     if (sliderTitle.textContent.length >= 18) {
         const textWrap = document.createElement("span");
         textWrap.className = "text-wrap";
-        textWrap.innerHTML = sliderTitle.textContent + "    " + sliderTitle.textContent;
+        textWrap.innerHTML = sliderTitle.textContent + "    " + sliderTitle.textContent;  
         sliderTitle.innerHTML = "";
         sliderTitle.append(textWrap);
     }
 
+}
+
+function changeBgBody() {
+    body.style.backgroundColor = bgBody[count];
 }
 
 function selectSong() {
@@ -120,16 +128,15 @@ function selectSong() {
     }
 
     if (isPlay) song.play();
-
-
+    
+    
 }
 
 function run() {
-
+  
     changeSliderContext();
-    changeBgBody();
     selectSong();
-
+  
 }
 
 function playSong() {
@@ -139,7 +146,7 @@ function playSong() {
         playIcon.style.display = "none";
         pauseIcon.style.display = "block";
 
-    } else {
+    }else{
         song.pause();
         isPlay = false;
         playIcon.style.display = "";
@@ -167,7 +174,7 @@ function progresUpdate() {
 function scurb(e) {
 
     // If we use e.offsetX, we have trouble setting the song time, when the mousemove is running
-    const currentTime = ((e.clientX - progres.getBoundingClientRect().left) / progres.offsetWidth) * song.duration;
+    const currentTime = ( (e.clientX - progres.getBoundingClientRect().left) / progres.offsetWidth ) * song.duration;
     song.currentTime = currentTime;
 
 }
@@ -179,7 +186,7 @@ function durationSongs() {
 
     let sec = parseInt(this.duration % 60);
     if (sec < 10) sec = "0" + sec;
-
+    
     const playerSongTime = `${min}:${sec}`;
     this.closest(".player__song").querySelector(".player__song-time").append(playerSongTime);
 
@@ -190,7 +197,7 @@ changeSliderContext();
 
 // add events
 sliderContext.addEventListener("click", openPlayer);
-sliderContext.addEventListener("animationend", () => sliderContext.style.animationName = '');
+sliderContext.addEventListener("animationend", () => sliderContext.style.animationName ='');
 playlistButton.addEventListener("click", closePlayer);
 
 nextButton.addEventListener("click", () => {
@@ -207,9 +214,9 @@ playButton.addEventListener("click", () => {
 });
 
 playerSongs.forEach(song => {
-    song.addEventListener("loadeddata", durationSongs);
-    song.addEventListener("timeupdate", progresUpdate);
-
+    song.addEventListener("loadeddata" , durationSongs);
+    song.addEventListener("timeupdate" , progresUpdate);
+    
 });
 
 progres.addEventListener("pointerdown", (e) => {
@@ -219,7 +226,7 @@ progres.addEventListener("pointerdown", (e) => {
 
 document.addEventListener("pointermove", (e) => {
     if (isMove) {
-        scurb(e);
+        scurb(e); 
         song.muted = true;
     }
 });
@@ -231,18 +238,18 @@ document.addEventListener("pointerup", () => {
 
 playerPlayList.forEach((item, index) => {
 
-    item.addEventListener("click", function () {
+    item.addEventListener("click", function() {
 
         if (index > count) {
             next(index - 1);
             return;
         }
-
+        
         if (index < count) {
             back(index + 1);
             return;
         }
 
     });
-
+    
 });
