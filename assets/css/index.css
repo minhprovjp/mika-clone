@@ -70,11 +70,6 @@ body {
 
 
 /* Animation */
-
-.snowflake {
-    filter: invert(1);
-}
-
 @-webkit-keyframes snowflakes-fall {
     0% {
         top: -10%;
