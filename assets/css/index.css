@@ -60,7 +60,6 @@ body {
 /* Animation */
 
 .snowflake {
-    text-shadow: 0 0 1px #000;
     filter: invert(1);
 }
 
@@ -194,16 +193,6 @@ body {
     left: 90%;
     -webkit-animation-delay: 3s, 1.5s;
     animation-delay: 3s, 1.5s;
-}
-
-/* Footer */
-footer img {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
 }
 
 /*parallax*/
