@@ -4,14 +4,14 @@ body {
  
  
  /* Dành cho điện thoại */
- @media all and (max-width: 480px) {
+ @media all and (min-width: 480px) {
  
  
  }
  
  
  /* Dành cho máy tính bảng */
- @media all and (max-width: 1024px) {
+ @media all and (min-width: 1024px) {
  
  
  }
@@ -224,9 +224,9 @@ body {
 .grid-container {
     font-family: 'Raleway', sans-serif;
     display: grid;
-    grid-template-columns: 500px 650px 400px;
-    grid-gap: 75px 100px;
-    padding: 50px 50px 50px 0px;
+    grid-template-columns: 26% 34% 21%;
+    grid-gap: 7% 7%;
+    padding: 5% 5% 5% 0;
     background-color: rgb(255, 245, 235);
     color: rgb(255, 245, 235);
 }
