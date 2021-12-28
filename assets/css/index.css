@@ -1,7 +1,3 @@
-/* Import fonts */
-
-
-/* Global */
 
 body {
     background: rgb(190, 223, 197);
@@ -18,7 +14,6 @@ body {
     overflow: hidden;
     width: 100%;
     height: 59px;
-
 }
 
 .right-menu {
@@ -32,7 +27,6 @@ body {
 .right-menu a {
     border-radius: 9999px;
     font-family: "Montserrat", sans-serif;
-    border: none;
     color: white;
     text-decoration: none;
     font-size: 20px;
